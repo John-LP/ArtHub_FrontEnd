@@ -16,17 +16,16 @@ body {
   margin: auto;
 }
 
-.logoLocal {
-  height: 2.5em;
+.logo_art_hub {
+  height: 6em;
 }
 
-.logoLocal:hover {
+.logo_art_hub:hover {
   cursor: pointer;
 }
 
 .navbarhome {
   width: 100%;
-  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
 }
 
 .nav-container {
@@ -59,7 +58,7 @@ body {
 .nav-container {
   display: block;
   position: relative;
-  height: 60px;
+  height: 10vh;
 }
 
 .nav-container .checkbox {
@@ -135,8 +134,7 @@ body {
 
 .logo {
   position: absolute;
-  top: 5px;
-  left: 15px;
+  top: -7px;
   font-size: 1.2rem;
   color: black;
   z-index: 20;

@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from './pages/Home';
-import Login from './pages/auth/Login';
+// import Login from './pages/auth/Login';
 import UserProfile from './pages/UserProfile';
 import ArtworkDetail from './pages/ArtworkDetail';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -20,10 +20,10 @@ function App() {
       path: "/artwork/:artworkId",
       element: <ArtworkDetail />,
     },
-    {
-      path: "/login",
-      element: <Login />,
-    }
+    // {
+    //   path: "/login",
+    //   element: <Login />,
+    // }
   ]);
 
   return (

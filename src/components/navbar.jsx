@@ -14,17 +14,14 @@ export default function NavBarHome() {
   const navigateToHome = () => {
     window.location.href = "/";
   };
-  const navigateToProfil = () => {
-    navigate("/profil");
+  const navigateToProfile = () => {
+    navigate("/profile");
   };
-  const navigateToCreateCard = () => {
-    navigate("/create_card");
+  const navigateToCreatePost = () => {
+    navigate("/createpost");
   };
-  const navigateToRegisterUser = () => {
-    navigate("/register_user");
-  };
-  const navigateToRegisterOwner = () => {
-    navigate("/register_owner");
+  const navigateToRegister = () => {
+    navigate("/register");
   };
   const handleLogout = () => {
     localStorage.removeItem("token");
@@ -48,8 +45,8 @@ export default function NavBarHome() {
               <img
                 onClick={navigateToHome}
                 className="logo_art_hub"
-                src="https://files.fm/u/frcfkm23ej"
-                alt="Logo_art_hub"
+                src="https://svgshare.com/i/12Nz.svg"
+                alt="Logo ArtHub"
               />
             </div>
             <div className="menu-items">
@@ -61,13 +58,13 @@ export default function NavBarHome() {
               {auth && (
                 <>
                   <li>
-                    <a className="navLink" onClick={navigateToProfil}>
+                    <a className="navLink" onClick={navigateToProfile}>
                       Mon Profil
                     </a>
                   </li>
                   {auth && isOwner === "true" && (
                     <li>
-                      <a className="navLink" onClick={navigateToCreateCard}>
+                      <a className="navLink" onClick={navigateToCreatePost}>
                         Créer un post
                       </a>
                     </li>
@@ -87,13 +84,8 @@ export default function NavBarHome() {
                     </a>
                   </li>
                   <li>
-                    <a className="navLink" onClick={navigateToRegisterUser}>
-                      Inscription membre
-                    </a>
-                  </li>
-                  <li>
-                    <a className="navLink" onClick={navigateToRegisterOwner}>
-                      Inscription gérant
+                    <a className="navLink" onClick={navigateToRegister}>
+                      Inscription
                     </a>
                   </li>
                 </>
