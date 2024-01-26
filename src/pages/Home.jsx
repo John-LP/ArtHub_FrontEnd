@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import "../styles/Home.css";
-import Navbar from '../components/navbar';
+import Navbar from '../components/Navbar';
 
 const Home = () => {
   const [artworks, setArtworks] = useState([]);

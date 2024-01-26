@@ -2,7 +2,7 @@ import "../styles/Navbar.css";
 import * as React from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function NavBarHome() {
+export default function Navbar() {
   const navigate = useNavigate();
   const token = localStorage.getItem("token");
   const isOwner = localStorage.getItem("isOwner");
